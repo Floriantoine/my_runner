@@ -45,7 +45,7 @@ void init_param(param_t *param)
     param->switch_key = 1;
     param->mouse.y = 600;
     param->window = sfRenderWindow_create
-    (mode, "RUNNER", sfResize | sfClose | 8, NULL);
+    (mode, "RUNNER", sfResize | sfClose, NULL);
     sfRenderWindow_setVerticalSyncEnabled(param->window, sfTrue);
 
     param->life.Tex = sfTexture_createFromFile("./resources/life.png", NULL);
